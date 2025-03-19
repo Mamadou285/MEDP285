@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Light gray background */
+}
+
+/* Flexbox layout for the wrapper */
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+/* Header Styling */
+header {
+  width: 100%;
+  background-color: #004d99; /* Blue header */
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* Navigation Styling */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main content */
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Flexbox for Gallery Section */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Each Image in the Gallery */
+.gallery-item {
+  text-align: center;
+  width: 300px; /* Controls the width of each image container */
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #ddd;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  transition: transform 0.3s ease;
+}
+
+.caption {
+  padding: 10px;
+  background-color: #004d99;
+  color: #fff;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  background-color: #004d99;
+  color: #fff;
+  padding: 10px 0;
+  width: 100%;
+}
