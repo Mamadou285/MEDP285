@@ -1,0 +1,89 @@
+/* Box-sizing fix */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    background: white;
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr; /* NAV - MAIN - SIDEBAR */
+    grid-template-rows: auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Header spans full width */
+header, footer {
+    text-align: center;
+    padding: 20px;
+    background: skyblue;
+    grid-column: 1 / 4;
+}
+
+footer {
+    background: darkslateblue;
+    color: white;
+    padding: 10px;
+}
+
+/* Navigation */
+nav {
+    background: cadetblue;
+    grid-column: 1 / 2;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Main content */
+main {
+    background: slategray;
+    grid-column: 2 / 3;
+    padding: 20px;
+}
+
+/* Sidebar */
+aside {
+    background: seagreen;
+    grid-column: 3 / 4;
+    padding: 20px;
+}
+
+/* Gallery styling */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+}
